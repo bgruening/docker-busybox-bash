@@ -1,4 +1,4 @@
-FROM busybox
+FROM busybox:glibc
 
 MAINTAINER Bjoern Gruening <bjoern.gruening@gmail.com>
 
