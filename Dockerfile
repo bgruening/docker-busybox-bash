@@ -1,4 +1,4 @@
-FROM busybox:glibc
+FROM progrium/busybox:latest
 
 MAINTAINER Bjoern Gruening <bjoern.gruening@gmail.com>
 
