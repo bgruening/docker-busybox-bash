@@ -1,6 +1,6 @@
-# Docker busybox bash-flavour
+# Docker Alpine Linux with bash and procps
 
-This repository creates a minimal Docker Container based on busybox with a static compiled `bash` include.
+This repository creates a minimal Docker Container based on Alpine Linux with `bash` and `procps` for Nextflow compatibility.
 
 You can build this image with running make:
 
