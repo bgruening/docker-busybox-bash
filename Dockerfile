@@ -1,10 +1,6 @@
-FROM gliderlabs/alpine:3.6
+FROM progrium/busybox:latest
 
-LABEL author="Roberto Spreafico <roberto.spreafico@gmail.com>"
-LABEL maintainer="Bjoern Gruening <bjoern.gruening@gmail.com>"
+MAINTAINER Bjoern Gruening <bjoern.gruening@gmail.com>
 
-RUN apk add --no-cache procps bash
-
-SHELL ["/bin/bash", "-c"]
-
+ADD ./bin/bash /bin/bash
 CMD /bin/bash
