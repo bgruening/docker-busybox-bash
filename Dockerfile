@@ -1,10 +1,5 @@
-FROM gliderlabs/alpine:3.6
+FROM progrium/busybox:latest
 
-LABEL author="Roberto Spreafico <roberto.spreafico@gmail.com>"
-LABEL maintainer="Bjoern Gruening <bjoern.gruening@gmail.com>"
-
-RUN apk add --no-cache procps bash
-
-SHELL ["/bin/bash", "-c"]
+RUN opkg-install bash procps-ng-ps
 
 CMD /bin/bash
